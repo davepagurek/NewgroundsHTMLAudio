@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+
+    <meta charset="UTF-8">
+
+    <title>Newgrounds Audio Player</title>
+
+      <link rel="stylesheet" href="css/style.css" media="screen" type="text/css" />
+
+  </head>
+
+  <body>
+
+    <div id="player">
+    <canvas id="visualization"></canvas>
+    <div id="overlay"></div>
+
+    <div id="info">
+      <h1>Pressure</h1>
+      <h2>by Pahgawk</h2>
+    </div>
+
+    <div id="controls">
+      <a class="button big first" id="play" href="" title="">
+        <i class="icon-play"></i>
+      </a>
+      <div id="time" class="buttonGroup">
+        <div class="static">
+          <label></label>
+          <span id="currentTime">
+            00:00
+          </span>
+          <span id="totalTime">
+            00:00
+          </span>
+        </div>
+      </div>
+
+      <div id="seekHolder" class="buttonGroup">
+        <div id="timeLabel">00:00</div>
+        <div class="rangeContainer">
+          <label></label>
+          <div class="rangeHorizontal stripes" id="seek">
+          </div>
+          <div id="seekFill" class="stripes">
+          </div>
+          <div id="seekDrag">
+          </div>
+        </div>
+      </div>
+
+      <div class="buttonGroup last">
+        <a class="button" id="mute" href="" title="">
+          <label class="expandable" id="volumeLabel">
+            <span id="volumePercent">100</span>
+            <div class="rangeVertical" id="volume">
+            </div>
+            <div id="volumeFill">
+            </div>
+            <div id="volumeOverlay">
+            </div>
+          </label>
+          <i class="icon-volume-up" id="volumeIcon"></i>
+        </a>
+        <a class="button" id="loop" href="" title="">
+          <label class="expandable">LOOP</label>
+          <i class="icon-refresh icon-flip-horizontal" id="loopIcon"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+
+    <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js'></script>
+
+    <script src="js/index.js"></script>
+
+  </body>
+
+</html>
