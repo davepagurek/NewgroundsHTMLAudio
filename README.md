@@ -1,7 +1,14 @@
 <h1>NewgroundsHTMLAudio</h1>
 The Newgrounds audio player in HTML/CSS/Javascript by Dave Pagurek
 
-<h2>Usage</h2>
+<h2>Versions</h2>
+The <strong>visualizer</strong> version includes some basic visualizations and a basic API to add more visualizations.
+
+The <strong>small</strong> version is made for embeds, stretches to fit its container's width using CSS, and is reprogrammed to be more modular since it doesn't need any video capabilities.
+
+The <strong>video</strong> version is a basic prototype that adapts the visualizer version for use with a `<video>` tag, including basic fullscreen support.
+
+<h2>Usage for Visualizer Version</h2>
 Create a new AudioPlayer with the following params:
 ```javascript
 new AudioPlayer(autoplay:Boolean, loop:Boolean, visualizerFunction:Function);

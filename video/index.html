@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <title>Newgrounds Video Player</title>
+
+    <link rel="stylesheet" href="css/style.css" media="screen" type="text/css" />
+
+</head>
+
+<body>
+
+  <div id="container">
+  <div id="player">
+
+    <video style="background-color:#000" id="video" preload="">
+      <source id="video_embed_source" src="http://uploads.ungrounded.net/alternate/701000/701912_alternate_4824.720p.mp4" type="video/mp4" />
+    </video>
+
+    <table id="controls">
+      <tr>
+        <td id="r1">
+          <a class="button big first" id="play" href="" title="">
+            <i class="icon-play"></i>
+          </a>
+        </td>
+        <td id="r2">
+          <div id="time" class="buttonGroup">
+            <div class="static">
+              <label></label>
+              <span id="currentTime">
+                00:00
+              </span>
+              <span id="totalTime">
+                00:00
+              </span>
+            </div>
+          </div>
+        </td>
+
+        <td id="r3">
+          <div id="seekHolder" class="buttonGroup">
+            <div id="timeLabel">00:00</div>
+            <div class="rangeContainer">
+              <label></label>
+              <div class="rangeHorizontal" id="seek">
+              </div>
+              <div class="stripes" id="loaded">
+              </div>
+              <div id="seekFill" class="stripes">
+              </div>
+              <div id="seekDrag">
+              </div>
+            </div>
+          </div>
+        </td>
+
+        <td id="r4">
+          <div class="buttonGroup last" id="right">
+            <a class="button" id="mute" href="" title="">
+              <label class="expandable" id="volumeLabel">
+                <span id="volumePercent">100</span>
+                <div class="rangeVertical" id="volume">
+                </div>
+                <div id="volumeFill">
+                </div>
+                <div id="volumeOverlay">
+                </div>
+              </label>
+              <i class="icon-volume-up" id="volumeIcon"></i>
+            </a>
+            <a class="button" id="fullscreen" href="" title="">
+              <label class="expandable">FULL</label>
+              <i class="icon-fullscreen" id="fullscreenIcon"></i>
+            </a>
+          </div>
+        </td>
+      </tr>
+    </table>
+  </div>
+</div>
+
+  <script src="js/index.js"></script>
+
+</body>
+
+</html>
